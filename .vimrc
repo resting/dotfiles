@@ -1,5 +1,5 @@
 " Plugins and stuffs {{{1
-    " Vbundle {{{2 
+    " Vbundle {{{2  Get it here: https://github.com/gmarik/vundle
         set nocompatible               " be iMproved
         filetype off                   " required!
 
@@ -37,6 +37,8 @@
 
         "
     " Plugins {{{2
+        " Easy motion
+        let g:EasyMotion_leader_key = '<Leader>' 
 " Settings {{{1
 set encoding=utf8
 set foldmethod=marker
@@ -46,6 +48,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+syntax on
+
+" Theme
+set background=dark
+colorscheme wombat256i " Get it here: https://github.com/dsolstad/vim-wombat256i and place wombat256i.vim in ~/.vim/colors/
 " Bindings {{{1
 
 " }}}
