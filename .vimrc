@@ -17,6 +17,7 @@
         Bundle 'tpope/vim-fugitive'
         Bundle 'Lokaltog/vim-easymotion'
         Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+        Bundle 'vim-scripts/snipMate'
         " multicursor only works with MacVim. mvim -v in terminal.
         Bundle 'paradigm/vim-multicursor'
         " vim-scripts repos
