@@ -45,6 +45,7 @@
         nnoremap <leader>i :<c-u>call MultiCursorPlaceCursor()<cr>
         nnoremap <leader>u :<c-u>call MultiCursorManual()<cr>
         nnoremap <leader>o :<c-u>call MultiCursorRemoveCursors()<cr>
+        let g:multicursor_quit = "<C-c>"
 " Settings {{{1
 set encoding=utf8
 set foldmethod=marker
