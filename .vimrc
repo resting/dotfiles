@@ -17,6 +17,8 @@
         Bundle 'tpope/vim-fugitive'
         Bundle 'Lokaltog/vim-easymotion'
         Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+        " multicursor only works with MacVim. mvim -v in terminal.
+        Bundle 'paradigm/vim-multicursor'
         " vim-scripts repos
         Bundle 'L9'
         Bundle 'FuzzyFinder'
@@ -39,6 +41,10 @@
     " Plugins {{{2
         " Easy motion
         let g:EasyMotion_leader_key = '<Leader>' 
+        " Multicursor
+        nnoremap <leader>i :<c-u>call MultiCursorPlaceCursor()<cr>
+        nnoremap <leader>u :<c-u>call MultiCursorManual()<cr>
+        nnoremap <leader>o :<c-u>call MultiCursorRemoveCursors()<cr>
 " Settings {{{1
 set encoding=utf8
 set foldmethod=marker
