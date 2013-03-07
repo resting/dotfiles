@@ -23,6 +23,7 @@
         " vim-scripts repos
         Bundle 'L9'
         Bundle 'FuzzyFinder'
+        Bundle 'Lokaltog/vim-powerline' 
         " non github repos
         Bundle 'git://git.wincent.com/command-t.git'
         " ...
@@ -47,6 +48,8 @@
         nnoremap <leader>u :<c-u>call MultiCursorManual()<cr>
         nnoremap <leader>o :<c-u>call MultiCursorRemoveCursors()<cr>
         let g:multicursor_quit = "<C-c>"
+        " PowerLine
+        let g:Powerline_symbols = 'fancy'
 " Settings {{{1
 set encoding=utf8
 set foldmethod=marker
@@ -56,11 +59,13 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set laststatus=2
 syntax on
 
 " Theme
 set background=dark
-colorscheme wombat256i " Get it here: https://github.com/dsolstad/vim-wombat256i and place wombat256i.vim in ~/.vim/colors/
+" colorscheme wombat256i " Get it here: https://github.com/dsolstad/vim-wombat256i and place wombat256i.vim in ~/.vim/colors/
+colorscheme wombat256mod " Get it here: https://github.com/vim-scripts/wombat256.vim (solves MacVim's white background in wombat256i)
 " Bindings {{{1
 
 " }}}
