@@ -7,7 +7,7 @@
         call vundle#rc()
 
         " let Vundle manage Vundle
-        " required! 
+        " required!
         Bundle 'gmarik/vundle'
 
         " My Bundles here:
@@ -20,13 +20,15 @@
         Bundle 'vim-scripts/snipMate'
         " multicursor only works with MacVim. mvim -v in terminal.
         Bundle 'paradigm/vim-multicursor'
+        Bundle 'Lokaltog/vim-powerline'
+
         " vim-scripts repos
         Bundle 'L9'
         Bundle 'FuzzyFinder'
-        Bundle 'Lokaltog/vim-powerline' 
+        Bundle 'vim-scripts/vimwiki'
         " non github repos
         Bundle 'git://git.wincent.com/command-t.git'
-        " ...
+        "
 
         filetype plugin indent on     " required!
         "
@@ -42,7 +44,7 @@
         "
     " Plugins {{{2
         " Easy motion
-        let g:EasyMotion_leader_key = '<Leader>' 
+        let g:EasyMotion_leader_key = '<Leader>'
         " Multicursor
         nnoremap <leader>i :<c-u>call MultiCursorPlaceCursor()<cr>
         nnoremap <leader>u :<c-u>call MultiCursorManual()<cr>
@@ -52,6 +54,7 @@
         let g:Powerline_symbols = 'fancy'
 " Settings {{{1
 set encoding=utf8
+set nocompatible
 set foldmethod=marker
 set smartindent
 set autoindent
@@ -60,6 +63,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set laststatus=2
+set listchars=eol:$,tab:>-,trail:.
+set list
 syntax on
 
 " Theme
@@ -67,5 +72,6 @@ set background=dark
 " colorscheme wombat256i " Get it here: https://github.com/dsolstad/vim-wombat256i and place wombat256i.vim in ~/.vim/colors/
 colorscheme wombat256mod " Get it here: https://github.com/vim-scripts/wombat256.vim (solves MacVim's white background in wombat256i)
 " Bindings {{{1
+    nnoremap <C-t> :%s/\s\+$//<cr> " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 
 " }}}
