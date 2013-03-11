@@ -73,5 +73,6 @@ set background=dark
 colorscheme wombat256mod " Get it here: https://github.com/vim-scripts/wombat256.vim (solves MacVim's white background in wombat256i)
 " Bindings {{{1
     nnoremap <C-t> :%s/\s\+$//<cr> " http://vim.wikia.com/wiki/Remove_unwanted_spaces
+    inoremap jj <Esc>
 
 " }}}
