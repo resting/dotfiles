@@ -57,7 +57,7 @@ set encoding=utf8
 set nocompatible
 set foldmethod=marker
 set smartindent
-set autoindent
+" set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
