@@ -62,8 +62,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set laststatus=2
-set list
-set listchars=tab:>-,trail:.
+" set list
+" set listchars=tab:>-,trail:.
 syntax on
 
 " Theme
