@@ -58,12 +58,11 @@ set nocompatible
 set foldmethod=marker
 set smartindent
 " set autoindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 set laststatus=2
-" set list
-" set listchars=tab:>-,trail:.
 syntax on
 
 " Theme
@@ -74,4 +73,7 @@ colorscheme wombat256mod " Get it here: https://github.com/vim-scripts/wombat256
     nnoremap <C-t> :%s/\s\+$//<cr> " http://vim.wikia.com/wiki/Remove_unwanted_spaces
     inoremap jj <Esc>
 
+    " https://stackoverflow.com/questions/2147875/what-vim-commands-can-be-used-to-quote-unquote-words
+    nnoremap <Leader>q" ciw""<Esc>P " Wrap with double quote \q"
+    nnoremap <Leader>q' ciw''<Esc>P " Wrap with single quote \q'
 " }}}
