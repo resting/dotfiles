@@ -1,2 +1,5 @@
-source ~/.vimrc
-set surround
+let mapleader=","
+set easymotion
+nmap <space> <Plug>(easymotion-jumptoanywhere)
+nmap m <Plug>(easymotion-bd-jk)
+nmap s <Plug>(easymotion-sn)

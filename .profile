@@ -6,3 +6,7 @@ export CLICOLOR=1
 export PS1="\u \w $"
 
 alias sl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+# Vim mode in zsh
+bindkey -v
+bindkey '^R' history-incremental-search-backward
